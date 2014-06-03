@@ -1,7 +1,9 @@
 RoomNum	RoomCat	Buzy	Status	NumBeds	NumPeople	RoomType	PBXNumber	Left	Top	Width	Height	RoomName	Kamerierka	ExtBeds	HotelId	Notes
 1	11	0	0	2	0	9	,610,	12	580	35	35	1A	66	1	1	0
 2	4	0	0	2	0	1	,611,	68	581	35	35	102	65	0	1	0
-3	4	0	0	2	0	1	,611,	126	582	35	35	104	65	0	1	0
+3	4	0	0	2	0	1	,611,	126	582	35	35	104	65	0	1	11
+
+
 4	4	0	0	2	0	1	,611,	189	582	35	35	106	66	0	1	0
 5	4	0	0	2	0	1	,611,	249	580	35	35	108	66	0	1	0
 6	4	0	0	2	0	1	,611,	307	581	35	35	110	66	0	1	0
