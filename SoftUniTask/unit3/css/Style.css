@@ -1,0 +1,20 @@
+.label{
+     padding="1px";
+    height:15px;
+	width:200px;
+	font-size=2px;
+}
+#SearchButton {
+border: 0;
+background: url('Images/system-search.png') 0 0 no-repeat;
+width: 16px;
+height: 18px;
+vertical-align: top;
+margin-top: 7px;
+cursor: pointer;
+-webkit-transition: all .2s ease;
+-moz-transition: all .2s ease;
+-ms-transition: all .2s ease;
+-o-transition: all .2s ease;
+transition: all .2s ease;
+}
