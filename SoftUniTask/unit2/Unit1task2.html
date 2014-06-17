@@ -4,30 +4,41 @@
 
 <head>
 <style>
-table,td,th{
-border :1px solid black;
-wigth:167px;
+
+table{
+border:1px solid black;
+vertical-align:top;
+width:400px;
+}
+#row1{
+vertical-align:top;
+margin:0;
+width:400px;
+}
+#row2{
+h2{font-size:200px;}
+h3{font-size:100px;}
+font-size:50px;
+width:200px;
 }
 </style>
 <title>
-
 Simple Table
 </title>
-
 </head>
-
 <body>
 <table>
 <colgroup>
 </colgroup>
 <tr>
-<td colspan="2"   > Software University </td>
+<td  colspan="2" rowspan="1" class="row1" ><h1>Software University</h1> 
+</td>
 </tr>
+<tr>
 <td>
-<img src="Images/SoftwareUniversity.jpg"></td>
-<td colspan="2"><b>Accessible and high quality software education</b>
-Our mission is to make people we train true professionals in the software industry and support them in finding employment
-
+<img src="Images/SoftwareUniversity.jpg" alt="pictures" />
+</td>
+<td  colspan="2"  class="row2"> <h2>Accessible and high quality software education.</h2>Our mission is to make peoplewe train true professionals in the software industry and support them in finding employment
 </td>
 </tr>
 </table>
