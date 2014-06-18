@@ -1,11 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <style>
+        table,td,th {
+            border:1px solid black;
+        width:100px;
+        height:50px;
+        }
+        .button {
+       width:50px;
+        height:50px;
+        }
+        #Displays {
+         background-color:aqua;
+        width:182px;
+        }
+    </style>
 <title>
 
 </title>
 <link type="text/css" rel="stylesheet" href="css/style.css">
-<script language="JavaScript">
+<script>
   <!--------------------------------------------------------------------
     Memory  = "0";      // initialise memory variable
     Current = "0";      //   and value of Display ("current" value)
@@ -145,42 +160,46 @@ function FixCurrent()
   </script>
 </head>
 <body>
-<label input="text" width="10" height="20px"></label>
+
 <br>
-<table border="1px" width="300" height="200px">
+    <form name="Calculator">
+<table >
 <tbody>
 <tr>
-<td colspan="4" rowspan="1" width="20" height="40px">
-<form name="Calculator">
-<input type="text" maxlength="40" size="25" name="Display" id="Displays"  onchange="FixCurrent()"></td>
 
+<td colspan="4" rowspan="1" >
+
+<input type="text"  name="Display" id="Displays"  onchange="FixCurrent()"></td>
+  
 </tr>
 <tr>
-<td align="center"><input class=button type="button" value=" 1 " name "one" onclick="AddDigit('1')"></td>
-<td align="center"><input class=button type="button" value=" 2 " name "two" onclick="AddDigit('2')"></td>
-<td align="center"><input class=button type="button" value=" 3 " name "three" onclick="AddDigit('3')"></button></td>
-<td align="center"><input class=button type="button" value="   +    " name "add" onclick="Operate('+')"></button></td>
+<td ><input class=button type="button" value=" 1 " name="one" onclick="AddDigit('1')"></td>
+<td ><input class=button type="button" value=" 2 " name= "two" onclick="AddDigit('2')"></td>
+<td ><input class=button type="button" value=" 3 " name= "three" onclick="AddDigit('3')"></td>
+<td ><input class=button type="button" value="   +    " name= "add" onclick="Operate('+')"></td>
 </tr>
 <tr>
-<td align="center"><input class=button type="button" value=" 4 " name "foure" onclick="AddDigit('4')"></button></td>
-<td align="center"><input class=button type="button" value=" 5 " name "five" onclick="AddDigit('5')"></button></td>
-<td align="center"><input class=button type="button" value=" 6 " name "six" onclick="AddDigit('6')"></button></td>
-<td align="center"><input class=button type="button" value="   -    " name "sub" onclick="Operate('-')" ></button></td>
+<td ><input class=button type="button" value=" 4 " name= "foure" onclick="AddDigit('4')"></td>
+<td ><input class=button type="button" value=" 5 " name= "five" onclick="AddDigit('5')"></td>
+<td ><input class=button type="button" value=" 6 " name= "six" onclick="AddDigit('6')"></td>
+<td ><input class=button type="button" value="   -    " name= "sub" onclick="Operate('-')" ></td>
 </tr>
 <tr>
-<td align="center"><input class=button type="button" value=" 7 " name "seven" onclick="AddDigit('7')" ></td>
-<td align="center"><input class=button type="button" value=" 8 " name "eight" onclick="AddDigit('8')" ></td>
-<td align="center"><input class=button type="button" value=" 9 " name "nine" onclick="AddDigit('9')"></td>
-<td align="center"><input class=button type="button" value="   *    " name "mul" onclick="Operate('*')" ></td>
+<td ><input class=button type="button" value=" 7 " name= "seven" onclick="AddDigit('7')" ></td>
+<td ><input class=button type="button" value=" 8 " name= "eight" onclick="AddDigit('8')" ></td>
+<td ><input class=button type="button" value=" 9 " name= "nine" onclick="AddDigit('9')"></td>
+<td ><input class=button type="button" value="   *    " name= "mul" onclick="Operate('*')" ></td>
 </tr>
 <tr>
-<td align="center"><input class=button type="button" value=" C " name "clear" onclick="Clear()"></td>
-<td align="center"><input class=button type="button" value=" 0 " name "zero" onclick="AddDigit('0')" ></button></td>
-<td align="center"><input class=button type="button" value=" = " name "result" onclick="Calculate()"></button></td>
-<td align="center"><input class=button type="button" value="   /    " name "div" onclick="Operate('/')" ></button></td>
+<td ><input class=button type="button" value=" C " name= "clear" onclick="Clear()"></td>
+<td ><input class=button type="button" value=" 0 " name= "zero" onclick="AddDigit('0')" ></td>
+<td ><input class=button type="button" value=" = " name= "result" onclick="Calculate()"></td>
+<td ><input class=button type="button" value="   /    " name= "div" onclick="Operate('/')" ></td>
 </tr>
+ 
 </tbody>
+  
 </table>
-</form>
+     </form>
 </body>
 </html>

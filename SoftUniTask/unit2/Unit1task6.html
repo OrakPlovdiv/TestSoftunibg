@@ -1,48 +1,128 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link  type="text/css" rel="stylesheet" href="CSS/style.css">
-<colgroup>
-<col width="190px">
-<col width="200px">
+    <style>
+       th {
+          
+        width:100px;
+        height:60px;
+        border:1px solid 
+        }
+        table,td {
+            padding:2px;
+           border:1px solid black;
+          
+        }
+        #soft {
+       width:459px;
+       height:70px;
+       border-radius:2px;
+       vertical-align:middle;
+             }
+        #google {
+            width:225px;
+            height:70px;
+            border-radius:2px;
 
-</colgroup>
+        }
+        #github {
+        width:225px;
+        height:70px;
+       
+            border-radius:2px;
+
+        }
+        #fb {
+        width:105px;
+        height:70px;
+        border-radius:2px;
+        }
+         #gmail {
+        width:100px;
+        height:70px;
+        border-radius:2px;
+        }
+          #youtube {
+        width:105px;
+        height:70px;
+        border-radius:2px;
+        } 
+          #two {
+        width:105px;
+        height:70px;
+        border-radius:2px;
+        }
+        #food {
+        width:105px;
+        height:70px;
+        border-radius:2px;
+        }
+        #game {
+        width:218px;
+        height:70px;
+        border-radius:2px;
+        }
+        #social {
+        width:105px;
+        height:35px;
+       
+      
+        }
+        #sleep {
+         width:105px;
+        height:35px;
+      }
+        #table1 {
+        width:100px;
+        height:70px;
+        }
+        #beer {
+            text-align:right;
+        width:345px;
+        height:70px;
+        border-radius:2px
+        }
+        #wc {
+        width:105px;
+        height:70px;
+        border-radius:2px
+        }
+        
+    </style>
+<link  type="text/css" rel="stylesheet" href="CSS/style.css">
+
 <title>Life in SoftUni</title>
 </head>
 <body>
-<table border="2px" width="400px" height="400px" cellspacing="4" cellpadding="3">
+<table  >
 <tbody>
 
 <tr class="row1">
-<td colspan="4"><button class="button" style=width:"400px"; height="300px" onclick="parent.location='https://softuni.bg'"; ><font size=6><b>Software university</b></button></font>
+<td colspan="4"><button class="button" id="soft"   onclick="parent.location='https://softuni.bg'" >Software university</button>
 </tr>
 <tr class="row2">
-<td colspan="2"><button align="left"; class="button" style=width:"40px"; height="40px" onclick="parent.location='https://google.bg'";>Google</td></button>
-<td colspan="2"><button align="left"; class="button" style=width:"20px"; height="40px" onclick="parent.location='https://github.com'";>GitHub</td></button>
-</tr>
-</tr>
-<tr class="row3">
-<td align="center"><button align="left"; class="button" style=width:"20px"; height="50px" onclick="parent.location='https://www.facebook.com'">FB</td></button>
-<td><button align="left"; class="button" style=width:"20px"; height="50px"onclick="parent.location='https://www.gmail.com'" >Gmail</td></button>
-<td align="center"; ><button align="left"; class="button" style=width:"20px"; height="50px"onclick="parent.location='https://www.youtube.com'">YouTube</td></button>
-<td><button align="left"; class="button" style=width:"20px"; height="40px" onclick="parent.location='http://gabrielecirulli.github.io/2048/'">2048</td></button>
-<tr class="row3">
-<td rowspan="2" align="right"><button align="left"; class="button" style=width:"20px"; height="40px" onclick="parent.location='http://en.wikipedia.org/wiki/Foot'">Food</td></button>
-<td rowspan="2" colspan="2" align="left"><button align="left"; class="button" style=width:"20px"; height="40px" onclick="parent.location='http://www.addictinggames.com/'">Game</td></button>
-
-<td align="left";><button align="left"; class="button" style=width:"20px"; height="40px" onclick="parent.location='http://facebook.com'">SocialLife</td></button>
+<td colspan="2" ><button  class="button" id="google" onclick="parent.location='https://google.bg'">Google</button></td>
+<td colspan="2"><button  class="button" id="github"  onclick="parent.location='https://github.com'">GitHub</button></td>
 </tr>
 
-<tr>
-<td align="center";><button align="left"; class="button" style=width:"20px"; height="40px" onclick="parent.location='http://www.imdb.com/'">Sleep</td>
+<tr class="row3">
+<td  ><button   class="button" id="fb"  onclick="parent.location='https://www.facebook.com'">FB</button>
+<td><button   class="button" id="gmail"    onclick="parent.location='https://www.gmail.com'" >Gmail</button></td>
+<td><button   class="button" id="youtube" onclick="parent.location='https://www.youtube.com'">YouTube</button></td>
+<td><button  class="button"  id="two" onclick="parent.location='http://gabrielecirulli.github.io/2048/'">2048</button></td>
+<tr class="row3">
+<td ><button   class="button" id="food"  onclick="parent.location='http://en.wikipedia.org/wiki/Foot'">Food</button></td>
+<td  colspan="2"><button  class="button" id="game"  onclick="parent.location='http://www.addictinggames.com/'">Game</button></td>
+<td><button id="social">Social Life</button>
+    <br />
+<button id="sleep">Sleep </button>
+    </td>
 </tr>
-</td>
 <tr>
-<td colspan="3" align="right"><button align="left"; class="button" style=width:"20px"; height="40px" onclick="parent.location='http://www.imdb.com/'"><B>Beer><B></td></button>
-<td align="left"><button align="left"; class="button" style=width:"20px"; height="40px" onclick="parent.location='http://www.parliament.bg'">WC</td></button>
+<td colspan="3" ><button  class="button" id="beer"  onclick="parent.location='http://www.imdb.com/'">Beer>>></button></td>
+<td><button  class="button" id="wc" onclick="parent.location='http://www.parliament.bg'">WC</button></td>
 </tr>
 </tbody>
 </table>
-
 </body>
 </html>
