@@ -1,0 +1,149 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+     <title>
+  
+    </title>
+    <style type="text/css">
+        td{
+        width:200px;
+        height:100px;
+
+        }
+        #head {
+          
+        text-align:center;
+        vertical-align:top;
+        background-color:pink;
+        }
+        #left {
+         text-align:left;
+        vertical-align:top;
+        background-color:pink;
+        }
+        .inputlabel {
+        width:95%;
+        }
+        .container {
+            padding:2px;
+       text-align: center;
+        }
+        .inputbox {
+        text-align:center;}
+        .lefta {
+        float:left;
+         }
+        .middlea {
+       text-align:left;
+       margin:0 auto !important;
+       display:inline-block;
+      
+        }
+        .righta {
+        float:right;
+       
+        }
+         
+        .middlea {
+            height: 19px;
+        }
+        #inputlabel {
+        width:160px;
+        }
+         
+        .ddl {
+            width: 95%;
+        }
+        #right {
+            text-align:left;
+            vertical-align:top;
+            background-color:pink;
+        }
+        .lefttime {
+           margin:2px;
+       width:44%;
+             }  
+         .righttime {
+              margin:2px;
+       width:44%;
+             }
+        #button {
+        width:98%;
+        } 
+    </style>
+</head>
+<body>
+    <form id="form1">
+    <div>
+    <table >
+    <thead>
+    <tr>
+    <th  id="head" colspan="2"  >
+   <b>FLIGHT ORDER</b>
+   </th>
+  </tr>
+  <tr>
+  <td   id="left" >
+      <i>From</i>
+      <br />
+  <select id="option1" class="ddl" >
+  <option>Enter a city</option>
+  </select>
+   
+      
+   <br/>
+   <br/>
+  <i>Departure Date</i>
+       <br />
+   <input type="text" value="09.06.2014" class="inputlabel"/>
+   <br/>
+   <label><i>Return Date</i></label>
+   <br/>
+   <input type="text" value="13.06.2014" class="inputlabel"/>
+      <div class="container">
+          <div class="lefta">12+</div>
+          <div class="middlea">2-12</div>
+          <div class="righta">0-2</div>
+      </div>
+<div class="inputbox">
+          <div class="lefta"><input type="text" value="0" style="width: 34px"/></div>
+          <div class="middlea"><input type="text" value="0" style="width: 34px"/></div>
+          <div class="righta"><input type="text" value="0" style="width: 34px"/></div>
+          </div>
+   </td>
+  
+
+  <td   id="right">
+   <label><i>To</i></label>
+   <br/>
+<select class="ddl">
+<option>Enter a city</option>
+</select>
+   <br />
+   <input type="checkbox"/>
+   <i>Prefer directs</i>
+   <br />
+   <i>Time interval</i>
+   <br/>
+   <input type="text" class="lefttime"   value="00:20"/>&nbsp;
+   <input type="text"  class="righttime"   value="05:00"/>
+   <br/>
+   <i>Time interval</i>
+   <br/><input type="text" class="lefttime"   value="16:00"/>&nbsp;
+   <input type="text"  class="righttime" value="22:00"/>
+   <br/>
+   <label><i>Choose class</i></label>
+    <br/>
+    <select class="ddl">
+<option>Ecomomy</option>
+</select>
+   <br/>
+   <input type="button" value="Search" id="button"/>
+   </td>
+   </tr>
+    </thead>
+    </table>
+     </div>
+    </form>
+</body>
+</html>

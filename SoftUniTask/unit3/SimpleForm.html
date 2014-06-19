@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>
+Simple Form
+</title>
+    <style type="text/css">
+        .label
+        {
+            width: 282px;
+        }
+        table,th {
+            border:1px solid black;
+        width:600px;
+        height:300px;
+        }
+        #left {
+            text-align:justify;
+            vertical-align:top;
+            background-color:#EDEDED;
+        }
+        .label {
+       width:130x;
+       height:5x; 
+
+        }
+        #top {
+        vertical-align:top;
+        background-color:#EDEDED;
+       }
+        .register {
+        text-align:right;
+        vertical-align:bottom;
+        
+        }
+        #divbutton {
+        width:270px;
+        height:50px;
+        font-size:10px;
+        text-align:right;
+        }
+        #right{
+            text-align:left;
+            vertical-align:top;
+            background-color:#234465;
+       
+        }
+    </style>
+</head>
+<body>
+<table    cellpadding="13px" cellspacing="1px">
+<tr>
+<td  colspan="4" id="top" >
+    <h4>Enter the System</h4>
+<a style="color:#A8A8A8"> is is necesary to login in you account in order to sing in for a cource</a>
+</td>
+</tr>
+<tr>
+    <td colspan="2" rowspan="2" id="left"  >
+       <a style="color:#959595">
+         YOU NEW</a>?<a style="color: #1B3D5F">REGISTER</a>
+                <br/>
+                <input class="label" type="text"  placeholder="UserName" />
+                <br/>
+                <br/>
+                <input class="label" type="text" placeholder="Email"/>
+                <br/>
+                <br/>
+                <input class="label" type="text"  placeholder="Password" />
+                <br/>
+                <br/>
+                <input class="label" type="text" placeholder="Confirm Password"/>
+                <br/>
+        <div id="divbutton">
+         <input  type="button" value="Register" id="register"  title="Register" placeholder="Register"/>
+            </div>
+            <br/>
+             </td>
+        </tr>
+ <tr>
+<td colspan="2"  rowspan="2" id="right" >
+<a style="color:white">ALREADY A STUDENT?LOGIN</a>
+<br />
+<br/>
+    <input class="label"    placeholder="Username"/>
+<br/>
+<br/>
+    <input class="label"   placeholder="Password"/>
+<br/>
+<br/>
+<input class="checkbox"  type="checkbox" name="remember"  id="remember"/><label  for="remember"/>remember me
+<div class="register"><input  type="button"  placeholder="login" title="Login" value="login" style="width: 116px"  /></div> <div class="register">Forgot Password</div>
+
+    </td>
+     </tr>
+</table>
+
+</body>
+</html>
